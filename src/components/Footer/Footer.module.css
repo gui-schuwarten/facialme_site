@@ -1,0 +1,38 @@
+:root {
+    --footer-color: #023e8a;
+    --font: 'Raleway', sans-serif;
+  }
+  
+  .footer {
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--font);
+    background-color: #fff;
+    color: var(--footer-color);
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social a {
+    color: var(--footer-color);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .social a:hover {
+    transform: scale(1.2);
+  }
+  
+  .contact {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

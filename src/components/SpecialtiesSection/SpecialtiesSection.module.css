@@ -1,0 +1,49 @@
+:root {
+    --font: 'Raleway', sans-serif;
+    --text-color: #ffffff;
+    --highlight: #00b4d8;
+    --max-width: 1280px;
+  }
+  
+  .section {
+    padding: 4rem 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    color: var(--text-color);
+    font-family: var(--font);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 3rem;
+  }
+  
+  .card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  
+  .text h3 {
+    color: var(--highlight);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .text strong {
+    font-weight: 700;
+  }
+  

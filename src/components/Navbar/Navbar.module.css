@@ -1,0 +1,100 @@
+:root {
+    --color-bg: #fff;
+    --color-active: #00b4d8;
+    --color-link: #222;
+    --font-family: 'Raleway', sans-serif;
+    --max-width: 1280px;
+  }
+  
+  .navbar {
+    background: transparent;
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar.scrolled {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family);
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: var(--color-link);
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    color: var(--color-active);
+  }
+  
+  .social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsivo */
+  
+  @media (max-width: 768px) {
+    .menu,
+    .social {
+      display: none;
+    }
+  
+    .toggle {
+      display: block;
+    }
+  
+    .menu.open {
+      display: block;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      background: var(--color-bg);
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+  
+    .menu.open ul {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .social {
+      margin-top: 1.5rem;
+      justify-content: center;
+    }
+  }  

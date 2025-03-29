@@ -1,0 +1,67 @@
+:root {
+    --font: 'Raleway', sans-serif;
+    --text-color: #ffffff;
+    --highlight: #00b4d8;
+    --max-width: 800px;
+  }
+  
+  .carousel {
+    max-width: var(--max-width);
+    margin: 4rem auto;
+    text-align: center;
+    font-family: var(--font);
+    padding: 2rem;
+    color: var(--text-color);
+  }
+  
+  .slide {
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  
+  .quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+  
+  .author {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--highlight);
+  }
+  
+  .author span {
+    display: block;
+    font-size: 0.9rem;
+    color: #ccc;
+    font-weight: normal;
+  }
+  
+  .controls {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .controls button {
+    font-size: 1.5rem;
+    background: none;
+    border: 2px solid var(--highlight);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--highlight);
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background: var(--highlight);
+    color: #fff;
+  }
+  
