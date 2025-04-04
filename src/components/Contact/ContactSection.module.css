@@ -1,0 +1,44 @@
+.contactSection {
+    background: linear-gradient(90deg, var(--color-marinho), var(--color-esmeralda));
+    color: var(--color-white);
+    text-align: center;
+    padding: 100px 20px;
+    font-family: var(--font-primary);
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: var(--color-turquesa);
+    margin-bottom: 40px;
+  }
+  
+  .info p {
+    font-size: 1.4rem;
+    margin: 10px 0;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .socialIcons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+  }
+  
+  .socialIcons img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  

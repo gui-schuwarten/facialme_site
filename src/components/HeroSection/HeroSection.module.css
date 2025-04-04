@@ -1,0 +1,138 @@
+.hero {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(14, 62, 104, 0.9), rgba(118, 165, 175, 0.3));
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 160px 60px 0 80px;
+  box-sizing: border-box;
+}
+
+.textBox {
+  max-width: 500px;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  line-height: 1.6;
+  margin: 0 auto;
+  padding-top: clamp(5px, 5vh, 5px);
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.textBox strong {
+  font-weight: 600;
+}
+
+
+/* === DISPLAY DE CADA VERSÃO === */
+.desktop,
+.tablet,
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  .textBox {
+    padding-left: 80px;   /* ⬅️ joga mais pro canto esquerdo */
+    padding-right: 20px;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .overlay {
+    padding: 140px 40px 0 60px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .textBox {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .overlay {
+    padding: 100px 40px;
+  }
+
+  .desktop,
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .textBox {
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    line-height: 2.2rem;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
+
+/* Celular menor */
+@media (max-width: 480px) {
+  .overlay {
+    padding: 80px 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .textBox {
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    line-height: 4rem;
+    max-width: 90%;
+    padding-top: clamp(500px, 25vh, 700px);
+    margin-left: 10px;
+    margin-top: 80px;
+    /* margin: 80px auto 0 auto; 👈 desce o conteúdo */
+  }
+
+  .desktop,
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,45 @@
+.specialtiesSection {
+    min-height: 100vh;
+    padding: 100px 60px;
+    background: linear-gradient(90deg, var(--color-marinho), var(--color-esmeralda));
+    color: var(--color-white);
+    text-align: left;
+    padding: 80px 60px 100px;
+  }
+  
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.item img {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(0 0 3px rgba(255,255,255,0.3)); /* ✨ glow leve opcional */
+}
+
+.item h3 {
+  font-size: 1.4rem;
+  color: var(--color-turquesa);
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  font-family: var(--font-primary);
+}
+
+.item p strong {
+  font-weight: 600;
+  color: var(--color-white);
+}
