@@ -36,7 +36,7 @@ export default function AboutSection() {
           <img src={iconTerapia} alt="Terapias Automatizadas por IA" />
           <p>Terapias Automatizadas por Inteligência Artificial</p>
         </div>
-        <div className={styles.iconItem}>
+        <div className={`${styles.iconItem} ${styles.centeredItem}`}>
           <img src={iconDispositivo} alt="Dispositivo remoto para diagnóstico" />
           <p>Dispositivo remoto para diagnóstico</p>
         </div>

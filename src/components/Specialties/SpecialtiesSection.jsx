@@ -9,7 +9,7 @@ import iconPEP from '../../assets/specialties/icon-prontuario.png';
 export default function SpecialtiesSection() {
   return (
     <section className={styles.specialtiesSection} id="especialidades">
-      <div className={styles.grid}>
+      {/* <div className={styles.grid}>
 
         <div className={styles.item}>
           <img src={iconTeleconsulta} alt="Teleconsulta" />
@@ -61,7 +61,7 @@ export default function SpecialtiesSection() {
           </div>
         </div>
 
-      </div>
+      </div> */}
     </section>
   );
 }

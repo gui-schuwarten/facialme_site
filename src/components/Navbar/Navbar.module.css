@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 20px 20px; /* Ajuste do posicionamento da logo */
   background: linear-gradient(90deg, var(--color-marinho), var(--color-esmeralda));
   color: var(--color-white);
   position: fixed;
@@ -11,6 +11,7 @@
   width: 100%;
   z-index: 999;
   box-sizing: border-box;
+  height: 80px;
 }
 
 .logo {
@@ -54,7 +55,12 @@
   display: none;
   flex-direction: column;
   gap: 5px;
+  padding: 10px 10px;
   cursor: pointer;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .bar {
@@ -66,8 +72,9 @@
 @media (max-width: 768px) {
   .navLinks {
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
+    gap: 15px;
     background-color: var(--color-marinho);
     width: 100%;
     flex-direction: column;
@@ -78,12 +85,15 @@
   }
 
   .navLinks.open {
+    font-family: var(--font-primary);
+    padding-top: 10px;
     max-height: 300px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .hamburger {
     display: flex;
+    border-color: #ddd;
   }
 
   .socialIcons {

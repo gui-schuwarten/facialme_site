@@ -27,7 +27,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-80}
-                duration={900}
+                duration={1200}
                 activeClass={styles.active}
                 className={styles.link}
                 onClick={closeMenu}
