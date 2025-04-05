@@ -3,10 +3,7 @@
   height: 100vh;
   background: linear-gradient(90deg, var(--color-marinho), var(--color-esmeralda));
   color: var(--color-white);
-  text-align: left;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   box-sizing: border-box;
   flex-direction: column;
   font-family: var(--font-primary);
