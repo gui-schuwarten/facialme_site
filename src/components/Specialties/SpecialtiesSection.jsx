@@ -1,5 +1,4 @@
 import styles from './SpecialtiesSection.module.css';
-
 import iconTeleconsulta from '../../assets/specialties/icon-teleconsulta.png';
 import iconTerapia from '../../assets/specialties/icon-terapia.png';
 import iconAI from '../../assets/specialties/icon-ai.png';
@@ -9,7 +8,7 @@ import iconPEP from '../../assets/specialties/icon-prontuario.png';
 export default function SpecialtiesSection() {
   return (
     <section className={styles.specialtiesSection} id="especialidades">
-      {/* <div className={styles.grid}>
+      <div className={styles.grid}>
 
         <div className={styles.item}>
           <img src={iconTeleconsulta} alt="Teleconsulta" />
@@ -61,7 +60,7 @@ export default function SpecialtiesSection() {
           </div>
         </div>
 
-      </div> */}
+      </div>
     </section>
   );
 }
