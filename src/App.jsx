@@ -13,7 +13,6 @@ function App() {
       <HeroSection />
       <AboutSection />
       <SpecialtiesSection />
-      <SpecialtiesSection_v2 />
       {/* <ContactSection /> */}
     </>
   );
