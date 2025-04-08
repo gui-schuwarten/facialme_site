@@ -47,11 +47,11 @@ export default function Navbar() {
         </ul>
   
         <div className={styles.socialIcons}>
-          <a href="#"><i className="fab fa-instagram"></i></a>
-          <a href="#"><i className="fab fa-linkedin-in"></i></a>
-          <a href="#"><i className="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/facialme.tech"><i className="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/facialme"><i className="fab fa-linkedin-in"></i></a>
+          {/* <a href="#"><i className="fab fa-youtube"></i></a>
           <a href="#"><i className="fab fa-facebook-f"></i></a>
-          <a href="#"><i className="fab fa-whatsapp"></i></a>
+          <a href="#"><i className="fab fa-whatsapp"></i></a> */}
         </div>
       </nav>
     );
