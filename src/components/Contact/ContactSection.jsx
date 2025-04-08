@@ -21,11 +21,11 @@ export default function ContactSection() {
       <p className={styles.subtitle}>Nos siga em nossas redes sociais:</p>
 
       <div className={styles.socialIcons}>
-        <a href="#"><img src={iconInstagram} alt="Instagram" /></a>
-        <a href="#"><img src={iconLinkedin} alt="LinkedIn" /></a>
-        <a href="#"><img src={iconYoutube} alt="YouTube" /></a>
+        <a href="https://www.instagram.com/facialme.tech/"><img src={iconInstagram} alt="Instagram" /></a>
+        <a href="https://www.linkedin.com/company/facialme"><img src={iconLinkedin} alt="LinkedIn" /></a>
+        {/* <a href="#"><img src={iconYoutube} alt="YouTube" /></a>
         <a href="#"><img src={iconFacebook} alt="Facebook" /></a>
-        <a href="#"><img src={iconWhatsapp} alt="WhatsApp" /></a>
+        <a href="#"><img src={iconWhatsapp} alt="WhatsApp" /></a> */}
       </div>
     </section>
   );

@@ -8,6 +8,14 @@ export default function Navbar() {
   
     const toggleMenu = () => setMenuOpen(prev => !prev);
     const closeMenu = () => setMenuOpen(false);
+
+    const sections = [
+      { id: 'home', label: 'Home' },
+      { id: 'sobre', label: 'Sobre' },
+      { id: 'especialidades', label: 'Especialidades' },
+      { id: 'contato', label: 'Fale Conosco' }
+    ];
+    
   
     return (
       <nav className={styles.navbar}>
@@ -20,10 +28,10 @@ export default function Navbar() {
         </div>
   
         <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>
-          {['home', 'sobre', 'especialidades', 'contato'].map((section) => (
-            <li key={section}>
+          {sections.map(({ id, label }) => (
+            <li key={id}>
               <Link
-                to={section}
+                to={id}
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -32,7 +40,7 @@ export default function Navbar() {
                 className={styles.link}
                 onClick={closeMenu}
               >
-                {section[0].toUpperCase() + section.slice(1).replace('-', ' ')}
+                {label}
               </Link>
             </li>
           ))}
