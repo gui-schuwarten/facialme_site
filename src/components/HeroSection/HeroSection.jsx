@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div className={styles.overlay}>
         <div className={styles.textBox}>
           <p>
-            Nosso objetivo é<span className={styles.break}></span> 
+            Nosso objetivo é <span className={styles.break}></span> 
             ser a <strong>referência</strong><span className={styles.break}>
             </span> no desenvolvimento<span className={styles.break}>
             </span> de softwares com<span className={styles.break}>
